@@ -1,0 +1,69 @@
+/**
+ * @file
+ * CSS targeted specifically for Internet Explorer 7 (and earlier) for Windows.
+ *
+ * Any CSS in this file will apply to all versions of IE before IE 8. You can
+ * target specific versions of IE by using conditional comments. See your
+ * sub-theme's .info file for an easy way to use them.
+ */
+
+
+/*
+ * Tabs
+ */
+
+ul.primary li a,
+ul.primary li a .tab,
+ul.secondary li a,
+ul.secondary li a .tab {
+  cursor: pointer;
+}
+
+/*
+ * Drupal nodes
+ */
+
+.node-unpublished>* {
+  position: relative; /* Otherwise these elements will appear below the "Unpublished" text. */
+}
+
+/*
+ * Drupal admin tables
+ */
+tr.even th,
+tr.even td,
+tr.odd th,
+tr.odd td {
+  border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+}
+
+/**
+ * Site Specific Overrides
+ */
+.views-slideshow-cycle-main-frame {
+  width: 960px;
+}
+.views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row-item {
+  position: relative;
+	width: 960px;
+}
+.views_slideshow_cycle_main .views-field-field-feature-image {
+  position: absolute;
+	right: 3.75em;
+	top: 0;
+	width: 40%;
+}
+#navigation ul.links li {
+  background: #46352f; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ2MzUyZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNTFkMWEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #46352f 0%, #251d1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#46352f), color-stop(100%,#251d1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #46352f 0%,#251d1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #46352f 0%,#251d1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #46352f 0%,#251d1a 100%); /* IE10+ */
+	background: linear-gradient(top,  #46352f 0%,#251d1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46352f', endColorstr='#251d1a',GradientType=0 ); /* IE6-8 */
+	margin: 0;
+	padding: 0;
+} 
